@@ -1,27 +1,26 @@
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>To-Do List</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="icon.png">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
 </head>
 <body>
-<div class="container">
-    <div class="todo-app">
-        <h2>To-do List <img src="images/icon.png"></h2>
-        <div class="row">
-            <input type="text" id="input-box" placeholder="Add your text">
-            <button onclick="addTask()">Add</button>
+    <div class="container">
+        <div class="input-field">
+            <textarea placeholder="Enter your new task"></textarea>
+            <i class="uil uil-clipboard-alt note-icon"></i>
         </div>
-        <ul id="list-container">
-            <!-- <li class="checked">Task 1</li>
-            <li>Task 2</li>
-            <li>Task 3</li> -->
-        </ul>
+
+        <ul class="todoLists"></ul>
+        <div class="pending-tasks">
+            <span>You have <span class="pending-num"> no </span> tasks pending.</span>
+            <button class="clear-button">Clear All</button>
+        </div>
     </div>
-</div>
-<script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
