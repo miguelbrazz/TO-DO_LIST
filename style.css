@@ -141,3 +141,9 @@ textarea::-webkit-scrollbar {
     background-color: #0e4bf1;
 }
 
+@media screen and (max-width: 508px) {
+    .container {
+        width: 90%;
+        font-size: 13px;
+    }
+}
